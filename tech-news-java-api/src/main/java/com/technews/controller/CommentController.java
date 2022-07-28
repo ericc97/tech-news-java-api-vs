@@ -22,7 +22,7 @@ public class CommentController {
 
   @GetMapping("/api/comments/{id}")
   public Comment getComment(@PathVariable int id) {
-    return repository.getById(id);
+    return repository.getReferenceById(id);
   }
 
 
